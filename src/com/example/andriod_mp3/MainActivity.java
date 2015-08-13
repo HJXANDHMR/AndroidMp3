@@ -17,7 +17,8 @@ public class MainActivity extends Activity {
 	private Button bt_start;
 	private Button bt_pause;
 	private Button bt_again;
-                 private Button bt_gittest
+        private Button bt_gittest
+        // 新增加的内容
 	private MediaPlayer mediaPlayer;
 
 	@Override
@@ -35,7 +36,7 @@ public class MainActivity extends Activity {
 			public void onClick(View v) {
 
 				if (!mediaPlayer.isPlaying()) {
-					mediaPlayer.start(); // ��ʼ����
+					mediaPlayer.start(); // ¿ªÊ¼²¥·Å
 					int time = mediaPlayer.getDuration();
 					// textView.setText(" " + time);
 				}
@@ -48,7 +49,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				if (mediaPlayer.isPlaying()) {
-					mediaPlayer.pause(); // ��ͣ����
+					mediaPlayer.pause(); // ÔÝÍ£²¥·Å
 				}
 			}
 		});
@@ -57,7 +58,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				if (mediaPlayer.isPlaying()) {
-					mediaPlayer.reset(); // ֹͣ����
+					mediaPlayer.reset(); // Í£Ö¹²¥·Å
 					mediaPlayer = MediaPlayer.create(MainActivity.this,
 							R.raw.love);
 				}
