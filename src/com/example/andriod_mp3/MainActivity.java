@@ -17,7 +17,7 @@ public class MainActivity extends Activity {
 	private Button bt_start;
 	private Button bt_pause;
 	private Button bt_again;
-                 private Button bt_git;
+                 private Button bt_gittest
 	// private TextView textView;
 	private MediaPlayer mediaPlayer;
 
