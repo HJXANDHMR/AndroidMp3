@@ -20,6 +20,7 @@ public class MainActivity extends Activity {
                  private Button bt_gittest
                 // 新增加的内容
                //test
+	//逗比
 	private MediaPlayer mediaPlayer;
 
 	@Override
