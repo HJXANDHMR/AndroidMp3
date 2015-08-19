@@ -1,4 +1,4 @@
-package com.example.andriod_mp3;
+﻿package com.example.andriod_mp3;
 
 import android.app.Activity;
 import android.media.MediaPlayer;
@@ -17,8 +17,9 @@ public class MainActivity extends Activity {
 	private Button bt_start;
 	private Button bt_pause;
 	private Button bt_again;
-        private Button bt_gittest
-        // 新增加的内容
+                 private Button bt_gittest
+                // 新增加的内容
+               //test
 	private MediaPlayer mediaPlayer;
 
 	@Override
