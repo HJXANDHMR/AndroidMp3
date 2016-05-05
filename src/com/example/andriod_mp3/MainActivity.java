@@ -27,7 +27,6 @@ public class MainActivity extends Activity {
 		bt_start = (Button) findViewById(R.id.start);
 		bt_pause = (Button) findViewById(R.id.pause);
 		bt_again = (Button) findViewById(R.id.again);
-		// textView = (TextView) findViewById(R.id.textView3);
 		mediaPlayer = MediaPlayer.create(this, R.raw.love);
 		bt_start.setOnClickListener(new OnClickListener() {
 			@Override
@@ -59,7 +58,6 @@ public class MainActivity extends Activity {
 				}
 			}
 		});
-
 	}
 
 	@Override
@@ -69,21 +67,16 @@ public class MainActivity extends Activity {
 			mediaPlayer.stop();
 			mediaPlayer.release();
 		}
-
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
 		if (id == R.id.action_settings) {
 			return true;
