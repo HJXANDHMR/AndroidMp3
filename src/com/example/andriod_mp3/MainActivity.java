@@ -17,8 +17,7 @@ public class MainActivity extends Activity {
 	private Button bt_start;
 	private Button bt_pause;
 	private Button bt_again;
-                 private Button bt_gittest
-                // 新增加的内容
+        private Button bt_gittest
 	private MediaPlayer mediaPlayer;
 
 	@Override
