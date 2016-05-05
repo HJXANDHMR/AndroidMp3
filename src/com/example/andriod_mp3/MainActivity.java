@@ -30,16 +30,12 @@ public class MainActivity extends Activity {
 		// textView = (TextView) findViewById(R.id.textView3);
 		mediaPlayer = MediaPlayer.create(this, R.raw.love);
 		bt_start.setOnClickListener(new OnClickListener() {
-
 			@Override
 			public void onClick(View v) {
-
 				if (!mediaPlayer.isPlaying()) {
-					mediaPlayer.start(); // ¿ªÊ¼²¥·Å
+					mediaPlayer.start();
 					int time = mediaPlayer.getDuration();
-					// textView.setText(" " + time);
 				}
-
 			}
 
 		});
@@ -48,7 +44,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				if (mediaPlayer.isPlaying()) {
-					mediaPlayer.pause(); // ÔÝÍ£²¥·Å
+					mediaPlayer.pause(); 
 				}
 			}
 		});
@@ -57,12 +53,10 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				if (mediaPlayer.isPlaying()) {
-					mediaPlayer.reset(); // Í£Ö¹²¥·Å
+					mediaPlayer.reset(); 
 					mediaPlayer = MediaPlayer.create(MainActivity.this,
 							R.raw.love);
 				}
-			
-
 			}
 		});
 
